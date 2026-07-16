@@ -1,0 +1,114 @@
+.storelocator-modal {
+    position: fixed;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 100000;
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+}
+.storelocator-modal.active {
+    display: block;
+}
+.storelocator-modal.active:before {
+    display: block;
+}
+.storelocator-modal .storelocator-modal-dialog {
+    background: transparent;
+    position: absolute;
+    left: 50%;
+    margin-left: -298px;
+    padding-bottom: 30px;
+    top: -100%;
+    z-index: 100001;
+    width: 596px;
+}
+.storelocator-modal.active .storelocator-modal-dialog {
+    top: 10%;
+}
+.storelocator-modal .storelocator-modal-body,
+.storelocator-modal .storelocator-modal-footer {
+    border: 0;
+    background: #fff;
+    padding: 25px 25px 15px;
+}
+.storelocator-modal .storelocator-modal-body {
+    border-bottom: 0;
+}
+.storelocator-modal .storelocator-modal-body p {
+    font-size: 1.3em;
+}
+.storelocator-modal .storelocator-modal-body h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-top: 0;
+}
+.storelocator-modal .storelocator-modal-footer {
+    border-top: #eeeeee solid 1px;
+    text-align: right;   
+}
+.storelocator-modal .storelocator-modal-footer .button {
+    margin: 0 7px;    
+}
+.storelocator-modal .storelocator-modal-footer .button:first-child {
+    margin: 0;
+}
+.storelocator-modal .storelocator-modal-panel>.notice.inline {
+    margin: 0;
+    display: none;
+}
+.storelocator-modal .storelocator-modal-panel:not(.active) {
+    display: none;
+}
+body.has-storelocator-modal {
+    overflow: hidden;
+}
+.storelocator-modal.storelocator-modal-deactivation-feedback .storelocator-modal-reason-input,
+.storelocator-modal.storelocator-modal-deactivation-feedback .storelocator-modal-internal-message {
+    margin: 3px 0 3px 22px;
+}
+.storelocator-modal.storelocator-modal-deactivation-feedback .storelocator-modal-reason-input input,
+.storelocator-modal.storelocator-modal-deactivation-feedback .storelocator-modal-reason-input textarea,
+.storelocator-modal.storelocator-modal-deactivation-feedback .storelocator-modal-internal-message input,
+.storelocator-modal.storelocator-modal-deactivation-feedback .storelocator-modal-internal-message textarea {
+    width: 100%;
+}
+.storelocator-modal.storelocator-modal-deactivation-feedback li.storelocator-modal-reason.has-internal-message .storelocator-modal-internal-message {
+    border: 1px solid #ccc;
+    padding: 7px;
+    display: none;
+}
+.storelocator-modal.storelocator-modal-deactivation-feedback .storelocator-modal-anonymous-label {
+    padding-top: 15px;
+}
+.storelocator-modal.storelocator-modal-deactivation-feedback .storelocator-modal-panel {
+    margin-top: 0 !important;
+}
+
+@media (max-width: 650px) {
+    .storelocator-modal .storelocator-modal-dialog {
+        margin-left: -50%;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+    }
+    .storelocator-modal .storelocator-modal-dialog .storelocator-modal-panel>h3>strong {
+        font-size: 1.3em;
+    }
+    .storelocator-modal.storelocator-modal-deactivation-feedback li.storelocator-modal-reason li.storelocator-modal-reason {
+        margin-bottom: 10px;
+    }
+    .storelocator-modal.storelocator-modal-deactivation-feedback li.storelocator-modal-reason li.storelocator-modal-reason .storelocator-modal-reason-input,
+    .storelocator-modal.storelocator-modal-deactivation-feedback li.storelocator-modal-reason li.storelocator-modal-reason .storelocator-modal-internal-message {
+        margin-left: 29px;
+    }
+    .storelocator-modal.storelocator-modal-deactivation-feedback li.storelocator-modal-reason li.storelocator-modal-reason label {
+        display: table;
+    }
+    .storelocator-modal.storelocator-modal-deactivation-feedback li.storelocator-modal-reason li.storelocator-modal-reason label>span {
+        display: table-cell;
+        font-size: 1.3em;
+    }
+}

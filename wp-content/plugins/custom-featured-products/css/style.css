@@ -1,0 +1,112 @@
+
+.fp-section-wrapper {
+    background-color: var(--ast-global-color-6, #faf6f1);
+    padding: 40px 15px; 
+    font-family: inherit;
+    border-radius: 20px;
+}
+
+
+.fp-main-title {
+    text-align: center;
+    color: var(--ast-global-color-0, #4e342e);
+    font-size: 2rem; 
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 35px; 
+}
+
+
+.fp-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    max-width: 1000px; 
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+.fp-card {
+    background-color: var(--ast-global-color-4, #ffffff);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none; 
+    color: inherit; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none !important;
+}
+
+.fp-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.fp-image {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover;
+    display: block;
+    background-color: #f0f0f0; 
+    color: #888; 
+}
+
+
+.fp-content {
+    padding: 20px 15px; 
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+    align-items: center;
+}
+
+
+.fp-title {
+    color: var(--ast-global-color-2, #2c1f1a);
+    font-size: 1.05rem; 
+    font-weight: 700;
+    margin: 0 0 8px 0; 
+}
+
+
+.fp-price, 
+.fp-price span.amount {
+    color: var(--ast-global-color-1, #6d4c41);
+    font-size: 1.15rem; 
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    display: block;
+}
+
+
+.fp-desc {
+    color: var(--ast-global-color-2, #2c1f1a);
+    font-size: 0.875rem; 
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .fp-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .fp-grid-container {
+        grid-template-columns: 1fr;
+        gap: 15px; 
+    }
+    
+    .fp-main-title {
+        font-size: 1.75rem; 
+        margin-bottom: 25px;
+    }
+}
