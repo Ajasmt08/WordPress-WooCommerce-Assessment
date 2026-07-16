@@ -390,7 +390,7 @@ This approach extends the default WooCommerce functionality without modifying an
 
 `wp-content/themes/astra-child/functions.php` (around line 20)
 
-
+---
 ## Screenshots
 
 The following screenshots showcase the key pages and features implemented as part of the assessment.
