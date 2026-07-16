@@ -431,9 +431,3 @@ The following screenshots showcase the key pages and features implemented as par
 ![Contact Us](screenshots/contact-us.png)
 
 ---
-
-### Lighthouse Performance Report
-
-The implemented optimizations resulted in an overall **95% Lighthouse Performance Score**.
-
-![Lighthouse Report](screenshots/lighthouse.png)
