@@ -106,7 +106,6 @@ You just need to force WordPress to generate a fresh `.htaccess` file tailored s
 2. In the left-hand menu, navigate to **Settings** > **Permalinks**.
 3. Scroll to the very bottom of the page and click **Save Changes**. *(You do not need to actually change any of the radio button selections).*
 
-> **Note:** Clicking "Save Changes" immediately generates a brand new `.htaccess` file for your local environment. Your 404 errors will disappear, and plugins like Wordfence and LiteSpeed will automatically inject their required rules into the new file in the background.
 
 ---
 
